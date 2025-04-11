@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="poke.js" defer></script>
+    <script src="search.js" defer></script>
     <link rel="stylesheet" href="poke.css">
 </head>
 
@@ -13,31 +14,31 @@
     <main class="main">
         <header class="header">
             <div class="container">
-                <div class="logo">
+                <div class="logo-wrapper">
                     <img src="./assets/pokeball.svg" alt="" srcset="">
                     <h1>pokedex</h1>
                 </div>
-                <div class="search-cont">
-                    <div class="search">
+                <div class="search-wrapper">
+                    <div class="search-wrap">
                         <img src="./assets/search.svg" alt="" class="search-icon" srcset="">
                         <input type="text" class="search-input body3-fonts" id="search-ip" placeholder="search">
                         <img src="./assets/cross.svg" alt="" class="search-close-icon" id="search-close-icon" srcset="">
                     </div>
-                </div>
-                <div class="sort-wrapper">
-                    <div class="sort-wrap">
-                        <img src="./assets/sorting.svg" class="sort-icon" id="sort-icon" alt="" srcset="">
-                    </div>
-                    <div class="filter-wrapper">
-                        <p class="body2-fonts">Sort by</p>
-                        <div class="filter-wrap">
-                            <div>
-                                <input type="radio" name="filters" id="number" value="number" checked>
-                                <label for="number" class="body3-fonts">Number</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="filters" id="name" value="name">
-                                <label for="name" class="body3-fonts">Name</label>
+                    <div class="sort-wrapper">
+                        <div class="sort-wrap">
+                            <img src="./assets/sorting.svg" class="sort-icon" id="sort-icon" alt="" srcset="">
+                        </div>
+                        <div class="filter-wrapper">
+                            <p class="body2-fonts">Sort by</p>
+                            <div class="filter-wrap">
+                                <div>
+                                    <input type="radio" name="filters" id="number" value="number" checked>
+                                    <label for="number" class="body3-fonts">Number</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="filters" id="name" value="name">
+                                    <label for="name" class="body3-fonts">Name</label>
+                                </div>
                             </div>
                         </div>
                     </div>
