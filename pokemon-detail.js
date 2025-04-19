@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pokemon = new URLSearchParams(window.location.search).get("id");
     const id = parseInt(pokemon, 10);
     if (id < 1 || id > MAX_POKEMON) {
-        return (window.location.href = "./poke.html")
+        return (window.location.href = "./index.html")
     }
     currentPokemonId = id;
     loadPokemon(id)
